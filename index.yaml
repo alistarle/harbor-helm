@@ -1,0 +1,60 @@
+apiVersion: v1
+entries:
+  harbor:
+  - apiVersion: v1
+    appVersion: 2.13.1
+    created: "2025-06-23T01:25:10.842088+02:00"
+    description: An open source trusted cloud native registry that stores, signs,
+      and scans content
+    digest: c16bc61f95e582aa74e6eb255a0d5ff0a613e131e8d76d09560b46ed20dfa782
+    home: https://goharbor.io
+    icon: https://raw.githubusercontent.com/goharbor/website/main/static/img/logos/harbor-icon-color.png
+    keywords:
+    - docker
+    - registry
+    - harbor
+    maintainers:
+    - email: yan-yw.wang@broadcom.com
+      name: Yan Wang
+    - email: wenkai.yin@broadcom.com
+      name: Wenkai Yin
+    - email: miner.yang@broadcom.com
+      name: Miner Yang
+    - email: shengwen.yu@broadcom.com
+      name: Shengwen Yu
+    name: harbor
+    sources:
+    - https://github.com/goharbor/harbor
+    - https://github.com/goharbor/harbor-helm
+    urls:
+    - https://alistarle.github.io/harbor-helm/harbor-1.17.1.tgz
+    version: 1.17.1
+  - apiVersion: v1
+    appVersion: 2.13.0
+    created: "2025-06-23T01:25:10.839957+02:00"
+    description: An open source trusted cloud native registry that stores, signs,
+      and scans content
+    digest: b82e595b84f4712199a2da95202a5be0adf8f034213894759e2b4bf736db4bf5
+    home: https://goharbor.io
+    icon: https://raw.githubusercontent.com/goharbor/website/main/static/img/logos/harbor-icon-color.png
+    keywords:
+    - docker
+    - registry
+    - harbor
+    maintainers:
+    - email: yan-yw.wang@broadcom.com
+      name: Yan Wang
+    - email: wenkai.yin@broadcom.com
+      name: Wenkai Yin
+    - email: miner.yang@broadcom.com
+      name: Miner Yang
+    - email: shengwen.yu@broadcom.com
+      name: Shengwen Yu
+    name: harbor
+    sources:
+    - https://github.com/goharbor/harbor
+    - https://github.com/goharbor/harbor-helm
+    urls:
+    - https://alistarle.github.io/harbor-helm/harbor-1.17.0.tgz
+    version: 1.17.0
+generated: "2025-06-23T01:25:10.835144+02:00"
