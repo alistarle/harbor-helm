@@ -3,10 +3,10 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.13.1
-    created: "2025-06-23T01:25:10.842088+02:00"
+    created: "2025-07-15T02:13:22.201324+02:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
-    digest: c16bc61f95e582aa74e6eb255a0d5ff0a613e131e8d76d09560b46ed20dfa782
+    digest: 695d90c2bbbe11f2d6327d056b0fa747b571885040052d110f9363d28f4dd15d
     home: https://goharbor.io
     icon: https://raw.githubusercontent.com/goharbor/website/main/static/img/logos/harbor-icon-color.png
     keywords:
@@ -31,10 +31,10 @@ entries:
     version: 1.17.1
   - apiVersion: v1
     appVersion: 2.13.0
-    created: "2025-06-23T01:25:10.839957+02:00"
+    created: "2025-07-15T02:13:22.198818+02:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
-    digest: b82e595b84f4712199a2da95202a5be0adf8f034213894759e2b4bf736db4bf5
+    digest: 9167187fcb399f07c438933fbb1dbd570c6d3f746d517a7316cdc0b3b6bdc1be
     home: https://goharbor.io
     icon: https://raw.githubusercontent.com/goharbor/website/main/static/img/logos/harbor-icon-color.png
     keywords:
@@ -57,4 +57,4 @@ entries:
     urls:
     - https://alistarle.github.io/harbor-helm/harbor-1.17.0.tgz
     version: 1.17.0
-generated: "2025-06-23T01:25:10.835144+02:00"
+generated: "2025-07-15T02:13:22.193946+02:00"

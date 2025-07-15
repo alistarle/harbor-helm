@@ -1,0 +1,31 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-production
+    ingress.kubernetes.io/proxy-body-size: "0"
+    ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/tls-acme: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+  labels:
+  name: frontend-registry-ingress
+  namespace: {{ .Release.Namespace | quote }}
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: app.{{ .Values.expose.ingress.hosts.core }}
+    http:
+      paths:
+      - backend:
+          service:
+            name: registry-frontend-service
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - app.{{ .Values.expose.ingress.hosts.core }}
+    secretName: frontend-registry-ingress

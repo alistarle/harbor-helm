@@ -1,0 +1,28 @@
+---
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: registry-frontend-deployment
+  namespace: {{ .Release.Namespace | quote }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: alistarle/harbor-demo-frontend
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REGISTRY_URL
+          valueFrom:
+            configMapKeyRef:
+              name: registry-core
+              key: EXT_ENDPOINT
